@@ -49,19 +49,19 @@ function procesamiento(cuotas){
     if (cuotas == 3){
         resultadoI = parseFloat(monto)  + tresCuotas(monto, interesTres) 
         resultadoFinal = resultadoI / cuotas
-        alert("El valor de cada cuota = $" +resultadoFinal + " por mes durante 3 meses" )
+        alert("El valor total = " + resultadoI +"\n" + "El valor de cada cuota = $" +resultadoFinal + " por mes durante 3 meses" )
     } else if (cuotas == 6){
         resultadoI = parseFloat(monto ) + seisCuotas(monto, interesSeis)
         resultadoFinal = resultadoI / cuotas
-        alert("El valor de cada cuota = $" + resultadoFinal + " por mes durante 6 meses")
+        alert("El valor total = " + resultadoI +"\n" + "El valor de cada cuota = $" + resultadoFinal + " por mes durante 6 meses ")
     } else if (cuotas == 12){
         resultadoI = parseFloat(monto) + doceCuotas(monto, interesDoce) 
         resultadoFinal = resultadoI / cuotas
-        alert("El valor de cada cuota = $ " + resultadoFinal + " por mes durante 12 meses")
+        alert("El valor total = " + resultadoI +"\n" + "El valor de cada cuota = $ " + resultadoFinal + " por mes durante 12 meses")
     } else if (cuotas == 24){
         resultadoI = parseFloat(monto)  + veintiCuotas(monto, interesVeintiCuatro)
         resultadoFinal = resultadoI / cuotas
-        alert("El valor de cada cuota = $ " + resultadoFinal + " por mes durante 24 meses")
+        alert("El valor total = " + resultadoI +"\n" + "El valor de cada cuota = $ " + resultadoFinal + " por mes durante 24 meses")
     } else {
         alert("Valor invalid")
     }
